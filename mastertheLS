@@ -1,1 +1,1 @@
-ls -mt | tr " "
+ls -mt | tr -d " "
