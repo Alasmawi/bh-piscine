@@ -1,1 +1,1 @@
-ls -d "a*" | "*z"| "z*a!"
+ls -alRd "a*"  "*z" "z*a!"
