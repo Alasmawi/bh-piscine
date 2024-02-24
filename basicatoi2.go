@@ -1,7 +1,4 @@
-package piscine 
-
-import "fmt"
-
+package piscine
 
 func BasicAtoi2(s string) int {
 	result := 0
