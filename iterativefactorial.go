@@ -1,7 +1,7 @@
 package piscine
 
 func IterativeFactorial(nb int) int {
-	if nb < 0 || nb > 50 {
+	if nb < 0 || nb > 24 {
 		return 0
 	}
 	factorial := 1
