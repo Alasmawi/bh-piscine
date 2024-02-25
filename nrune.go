@@ -7,7 +7,9 @@ func NRune(s string, n int) rune {
 		return 0
 	} else if n > max {
 		return 0
+	} else if n == 0 {
+		return arr[0]
 	} else {
-		return arr[n]
+		return arr[n-1]
 	}
 }
