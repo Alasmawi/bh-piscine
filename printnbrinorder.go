@@ -7,21 +7,20 @@ func PrintNbrInOrder(n int) {
 		z01.PrintRune('0')
 		return
 	}
+	arr := []rune{}
 
-	s := string(n)
-	arr := []rune(s)
+	for n > 0 {
+		temp := n % 10
+		arr = append(arr, rune(temp+'0'))
+		n = n / 10
+	}
 
 	for i := 0; i < len(arr); i++ {
-		max := i
-		for j := i + 1; j < len(arr)-1; j++ {
-			if arr[j] > arr[max] {
-				// changing the index to show the min value
-				max = j
+		for j := i + 1; j < len(arr); j++ {
+			if arr[i] > arr[j] {
+				arr[i], arr[j] = arr[j], arr[i]
 			}
 		}
-		temp := arr[i]
-		arr[i] = arr[max]
-		arr[max] = temp
 
 		for i := 0; i < len(arr); i++ {
 			z01.PrintRune(arr[i])
