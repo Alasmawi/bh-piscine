@@ -7,5 +7,9 @@ func AlphaCount(s string) int {
 			count++
 		}
 	}
-	return count
+	if count == 0 {
+		return 0
+	} else {
+		return count + 1
+	}
 }
