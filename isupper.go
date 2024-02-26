@@ -7,6 +7,7 @@ func IsUpper(s string) bool {
 			boolean = true
 		} else {
 			boolean = false
+			break
 		}
 	}
 	return boolean
