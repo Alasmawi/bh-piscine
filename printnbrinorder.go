@@ -10,19 +10,18 @@ func PrintNbrInOrder(n int) {
 
 	s := string(n)
 	arr := []rune(s)
-	min := 0
-	temp := ' '
+
 	for i := 0; i < len(arr); i++ {
-		min = i
+		max := i
 		for j := i + 1; j < len(arr); j++ {
-			if arr[j] < arr[min] {
+			if arr[j] > arr[max] {
 				// changing the index to show the min value
-				min = j
+				max = j
 			}
 		}
-		temp = arr[i]
-		arr[i] = arr[min]
-		arr[min] = temp
+		temp := arr[i]
+		arr[i] = arr[max]
+		arr[max] = temp
 
 		for i := 0; i < len(arr); i++ {
 			z01.PrintRune(arr[i])
