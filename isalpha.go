@@ -3,7 +3,7 @@ package piscine
 func IsAlpha(s string) bool {
 	boolean := false
 	for i := 0; i < len(s); i++ {
-		if (rune(s[i]) >= 67 && rune(s[i]) <= 90) || (rune(s[i]) >= 97 && rune(s[i]) <= 122) {
+		if (rune(s[i]) >= 67 && rune(s[i]) <= 90) || (rune(s[i]) >= 97 && rune(s[i]) <= 122) || (rune(s[i]) >= 48 && rune(s[i]) <= 57) {
 			boolean = true
 		} else {
 			boolean = false
