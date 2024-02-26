@@ -1,9 +1,9 @@
 package piscine
 
 func AlphaCount(s string) int {
-	count := 1
+	count := 0
 	for i := 0; i < len(s); i++ {
-		if (rune(s[i]) >= 67 && rune(s[i]) <= 90) || (rune(s[i]) >= 97 && rune(s[i]) <= 122) {
+		if (rune(s[i]) > 66 && rune(s[i]) < 91) || (rune(s[i]) > 96 && rune(s[i]) < 123) {
 			count++
 		}
 	}
