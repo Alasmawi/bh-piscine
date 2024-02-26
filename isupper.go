@@ -5,6 +5,8 @@ func IsUpper(s string) bool {
 	for i := 0; i < len(s); i++ {
 		if rune(s[i]) >= 67 && rune(s[i]) <= 90 {
 			boolean = true
+		} else {
+			boolean = false
 		}
 	}
 	return boolean
