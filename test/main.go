@@ -2,10 +2,12 @@ package main
 
 import (
 	"fmt"
+
 	"piscine"
 )
 
 func main() {
-	arg := 4
-	fmt.Println(piscine.IterativeFactorial(arg))
+	fmt.Println(piscine.Index("Hello!", "l"))
+	fmt.Println(piscine.Index("Salut!", "alu"))
+	fmt.Println(piscine.Index("Ola!", "hOl"))
 }
