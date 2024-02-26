@@ -10,6 +10,6 @@ func AlphaCount(s string) int {
 	if count == 0 {
 		return 0
 	} else {
-		return count + 1
+		return count
 	}
 }
