@@ -7,9 +7,8 @@ func ToUpper(s string) string {
 		if arr[i] >= 97 && arr[i] <= 122 {
 			arr[i] = arr[i] - 32
 		}
-	}
-	for b := 0; b < len(s); b++ {
-		arrr = arrr + string(arr[b])
+
+		arrr = string(arr)
 	}
 
 	return arrr
