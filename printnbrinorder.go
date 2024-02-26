@@ -3,7 +3,8 @@ package piscine
 import "github.com/01-edu/z01"
 
 func PrintNbrInOrder(n int) {
-	arr := []rune(string(n))
+	s := string(n)
+	arr := []rune(s)
 	min := 0
 	temp := ' '
 	for i := 0; i <= len(arr); i++ {
