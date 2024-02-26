@@ -13,7 +13,7 @@ func PrintNbrInOrder(n int) {
 
 	for i := 0; i < len(arr); i++ {
 		max := i
-		for j := i + 1; j < len(arr); j++ {
+		for j := i + 1; j < len(arr)-1; j++ {
 			if arr[j] > arr[max] {
 				// changing the index to show the min value
 				max = j
