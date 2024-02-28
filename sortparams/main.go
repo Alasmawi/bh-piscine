@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	arr := os.Args[1:]
+	arr := os.Args
 
 	for i := 1; i < len(arr)-1; i++ {
 		for j := i + 1; j < len(arr); j++ {
