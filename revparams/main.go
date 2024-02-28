@@ -8,7 +8,7 @@ import (
 
 func main() {
 	name := os.Args[1:]
-	for i := len(name); i >= 0; i-- { // enter each string
+	for i := len(name) - 1; i >= 0; i-- { // enter each string
 		for _, ch := range name[i] { // print each rune
 			z01.PrintRune(ch)
 		}
