@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	name := os.Args
+	name := os.Args[1:]
 	for _, str := range name { // enter each string
 		for _, ch := range str { // print each rune
 			z01.PrintRune(ch)
