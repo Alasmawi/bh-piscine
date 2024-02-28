@@ -8,10 +8,10 @@ import (
 
 func main() {
 	name := os.Args
-	for _, str := range name {
-		for _, ch := range str {
+	for _, str := range name { // enter each string
+		for _, ch := range str { // print each rune
 			z01.PrintRune(ch)
 		}
+		z01.PrintRune('\n')
 	}
-	z01.PrintRune('\n')
 }
