@@ -9,7 +9,7 @@ import (
 func main() {
 	arr := os.Args[1:]
 
-	for i := 1; i < len(arr)-1; i++ {
+	for i := 0; i < len(arr); i++ {
 		for j := i + 1; j < len(arr); j++ {
 			if arr[i] > arr[j] {
 				arr[i], arr[j] = arr[j], arr[i]
