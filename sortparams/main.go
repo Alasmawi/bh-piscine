@@ -17,7 +17,7 @@ func main() {
 		}
 	}
 	for _, str := range arr { // enter each string
-		for _, ch := range str { // print each rune
+		for _, ch := range str[2:] { // print each rune
 			z01.PrintRune(ch)
 		}
 		z01.PrintRune('\n')
