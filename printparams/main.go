@@ -7,11 +7,12 @@ import (
 )
 
 func main() {
-	// save at index 0
-	name := os.Args[0]//array of strings
+	name := os.Args // array of strings
 	// print at index from index
-	for _, str := range name[2:] {
-		z01.PrintRune(str)
+	for _, str := range name {
+		for _, ch := range str {
+			z01.PrintRune(ch)
+		}
 	}
 	z01.PrintRune('\n')
 }
