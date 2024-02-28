@@ -7,8 +7,7 @@ import (
 )
 
 func main() {
-	name := os.Args // array of strings
-	// print at index from index
+	name := os.Args
 	for _, str := range name {
 		for _, ch := range str {
 			z01.PrintRune(ch)
