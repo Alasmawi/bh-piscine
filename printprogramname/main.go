@@ -12,6 +12,6 @@ func main() {
 	// print at index from index
 	for _, str := range name[2:] {
 		z01.PrintRune(str)
-		z01.PrintRune('\n')
 	}
+	z01.PrintRune('\n')
 }
