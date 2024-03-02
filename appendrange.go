@@ -6,9 +6,10 @@ func AppendRange(min, max int) []int {
 	if min >= max || (min < 0 || max < 0) {
 		return arr1
 	}
-
+	index := 0
 	for i := min; i < max; i++ {
-		arr1 = append(arr1, i)
+		arr1[index] = i
+		index++
 	}
 	return arr1
 }
