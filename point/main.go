@@ -13,13 +13,11 @@ type point struct {
 
 func main() {
 	points := &point{}
-
 	x := ' '
 	for i := 1; i <= 14; i++ {
 		switch i {
 		case 1:
 			x = 'x'
-			//x = 42, y = 21
 		case 2:
 			x = ' '
 		case 3:
@@ -48,7 +46,6 @@ func main() {
 			x = 49
 
 		}
-
 		z01.PrintRune(x)
 	}
 	z01.PrintRune('\n')
