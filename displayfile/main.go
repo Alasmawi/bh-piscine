@@ -6,10 +6,12 @@ import (
 )
 
 func main() {
-	dat, err := os.ReadFile(os.Args[2])
-	if err != nil {
-		fmt.Println("error")
-		return
+	if len(os.Args) > 1 {
+		dat, err := os.ReadFile(os.Args[4])
+		if err != nil {
+			fmt.Println("File name missing")
+			return
+		}
+		fmt.Print(string(dat[2:]))
 	}
-	fmt.Print(string(dat[2:]))
 }
