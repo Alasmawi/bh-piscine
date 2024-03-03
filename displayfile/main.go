@@ -13,5 +13,7 @@ func main() {
 			return
 		}
 		fmt.Print(string(dat[2:]))
+	} else {
+		fmt.Println("File name missing")
 	}
 }
