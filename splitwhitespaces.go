@@ -9,7 +9,6 @@ func SplitWhiteSpaces(s string) []string {
 		} else {
 			arr1[index] += string(v)
 		}
-
 	}
 	return arr1
 }
