@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	dat, err := os.ReadFile("quest8.txt")
+	dat, err := os.ReadFile(os.Args[2])
 	if err != nil {
 		fmt.Println("error")
 		return
