@@ -8,7 +8,7 @@ func IsSorted(f func(a, b int) int, a []int) bool {
 			bol = false
 		}
 	}
-	for i := len(a) - 1; i >= 0; i-- {
+	for i := len(a) - 1; i > 0; i-- {
 		if (f(a[i-1], a[i])) < 0 {
 			bol = false
 		}
