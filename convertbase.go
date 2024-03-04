@@ -13,6 +13,7 @@ func ConvertBase(nbr, baseFrom, baseTo string) string {
 	}
 	return result
 }
+
 func indexof(str string, char byte) int {
 	for i := 0; i < len(str); i++ {
 		if str[i] == char {
