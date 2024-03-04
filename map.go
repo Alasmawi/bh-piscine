@@ -1,11 +1,12 @@
 package piscine
 
 func Map(f func(int) bool, a []int) []bool {
-	arr := []bool{}
-	if len(a) >= 1 {
-		for i := 0; i < len(a); i++ {
-			arr[i] = f(a[i])
-		}
+	arr := make([]bool, len(a))
+	if len(a) == 0 {
+		return arr
+	}
+	for i := 0; i < len(a); i++ {
+		arr[i] = f(a[i])
 	}
 	return arr
 }
