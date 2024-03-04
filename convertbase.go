@@ -1,23 +1,19 @@
 package piscine
 
 func ConvertBase(nbr, baseFrom, baseTo string) string {
-	decimal := 0
-	// Convert the number from baseFrom to decimal
+	num := 0
 	for i := 0; i < len(nbr); i++ {
-		decimal = decimal*len(baseFrom) + indexOf(baseFrom, nbr[i])
+		num = num*len(baseFrom) + indexof(baseFrom, nbr[i])
 	}
-	// Convert the decimal number to baseTo
 	result := ""
-	for decimal > 0 {
-		remainder := decimal % len(baseTo)
+	for num > 0 {
+		remainder := num % len(baseTo)
 		result = string(baseTo[remainder]) + result
-		decimal = decimal / len(baseTo)
+		num = num / len(baseTo)
 	}
 	return result
 }
-
-// Helper function to get the index of a character in a string
-func indexOf(str string, char byte) int {
+func indexof(str string, char byte) int {
 	for i := 0; i < len(str); i++ {
 		if str[i] == char {
 			return i
