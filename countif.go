@@ -1,15 +1,13 @@
 package piscine
 
 func CountIf(f func(string) bool, tab []string) int {
-	count := 1
+	count := 0
 	for _, str := range tab {
 		if f(str) {
 			count++
 		}
 	}
-	if count == 1 {
-		return 0
-	} else {
-		return count
-	}
+
+	return count
+
 }
