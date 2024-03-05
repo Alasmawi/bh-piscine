@@ -4,7 +4,7 @@ func Rot14(s string) string {
 	//m+14=a  m-a
 	//n+14=b
 	//o+14=c
-	//(letter - 'z')+14=rot 14 of a letter == letter -12 when letter>=m
+	//(letter - 'a')+14=rot 14 of a letter
 	arr := []rune(s)
 	str := ""
 	for i := 0; i < len(s); i++ {
@@ -23,6 +23,7 @@ func Rot14(s string) string {
 				}
 			}
 		}
+
 		str += string(arr[i])
 	}
 	return str
