@@ -16,7 +16,7 @@ func Rot14(s string) string {
 					arr[i] += 14
 				}
 			} else if arr[i] >= 'a' && arr[i] <= 'z' {
-				if arr[i] > 'm' {
+				if arr[i] >= 'm' {
 					arr[i] = arr[i] - 12
 				} else {
 					arr[i] += 14
