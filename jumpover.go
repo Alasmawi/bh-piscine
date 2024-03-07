@@ -5,9 +5,9 @@ func JumpOver(str string) string {
 		return "\n"
 	}
 	arr := []rune(str)
-	str1 := "\n"
+	str1 := ""
 	for i := 2; i < len(str); i += 3 {
 		str1 += string(arr[i])
 	}
-	return str1
+	return str1 + "\n"
 }
